@@ -4,13 +4,13 @@
 
 Imagine you have a secret decoder ring that turns normal messages into gibberish. That's basically what encryption does! This program breaks a specific type of secret code called a "many-time pad cipher."
 
-## The Big Problem (That Makes Breaking It Possible)
+## The Big Problem
 
 Here's the thing: when you use the same secret key to encrypt multiple messages, you've made a HUGE mistake. It's like using the same password for everything - if someone figures out the pattern, they can unlock all your stuff.
 
 This program takes advantage of that mistake to crack the code and read the hidden messages.
 
-## How Does It Work? (The Simple Version)
+## How Does It Work?
 
 Let me walk you through this like you're learning a magic trick:
 
@@ -22,9 +22,9 @@ Here's the magic part: when you encrypt a space with a secret key, it creates a 
 
 ### Step 2: Testing Our Guess
 
-But wait - how do we know if our guess is right? 
+How do we know if our guess is right? 
 
-Simple! We try it on other messages that were encrypted with the same key. If our guess is correct, the other messages should decode into normal letters (A-Z, a-z) at that same position.
+We try it on other messages that were encrypted with the same key. If our guess is correct, the other messages should decode into normal letters (A-Z, a-z) at that same position.
 
 Think of it like this: if you're trying to guess someone's birthday and you say "Is it in June?", you'd check if your guess makes sense with other clues you have. Same idea here!
 
@@ -60,11 +60,9 @@ The program will print out:
 
 Some characters might show up as "?" - that just means the program couldn't figure out that specific spot. But it usually gets most of it right!
 
-## The Math Behind It (Step by Step)
+## The Math Behind It
 
-Don't worry, I'll make this super clear! The encryption uses something called XOR (exclusive OR). Let me show you exactly how it all works.
-
-### What is XOR?
+### XOR?
 
 XOR is like a light switch that flips:
 - If you XOR the same thing twice, you get back what you started with
@@ -75,10 +73,6 @@ Basic rule:
 Message ⊕ Key = Encrypted Message
 Encrypted Message ⊕ Key = Message (back to normal!)
 ```
-
-### The Complete Workflow (With Real Example)
-
-Let me walk you through EXACTLY what happens, step by step:
 
 #### Setup: What We Have
 
@@ -95,7 +89,7 @@ Encrypted2 = "World" ⊕ "XXXXX" = gibberish2
 Encrypted3 = "Secret" ⊕ "XXXXX" = gibberish3
 ```
 
-We ONLY have the gibberish (encrypted messages). We DON'T know the key or original messages.
+We ONLY have the gibberish (encrypted messages). We don't know the key or original messages.
 
 #### The Magic Trick: Comparing Two Encrypted Messages
 
@@ -114,7 +108,7 @@ When we XOR them together, something magical happens - the keys cancel out:
 = "Hello" ⊕ "World"
 ```
 
-Now we're comparing the ORIGINAL messages directly, without the key involved!
+Now we're comparing the original messages directly, without the key involved!
 
 #### The Space Attack: Real Numbers
 
@@ -231,4 +225,3 @@ When used correctly (with a different key every time), this type of encryption i
 
 Just compile and run the C++ code. It already has 10 encrypted messages and 1 target message built in. You'll see the magic happen right before your eyes as it cracks the code and reveals the hidden text!
 
-Pretty cool, right? 🔓
