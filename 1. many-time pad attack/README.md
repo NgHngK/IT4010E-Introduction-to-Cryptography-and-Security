@@ -16,15 +16,15 @@ Let me walk you through this like you're learning a magic trick:
 
 ### Step 1: The Space Character Trick
 
-The main trick is super clever. In English text, the space character (that gap between words) is really common. We use it ALL the time.
+The main trick is super clever. In English text, the space character (that gap between words) is really common. We use it all the time.
 
 Here's the magic part: when you encrypt a space with a secret key, it creates a specific pattern. If we guess that a certain position in one message is a space, we can use that to figure out what the secret key might be at that spot.
 
 ### Step 2: Testing Our Guess
 
-But wait - how do we know if our guess is right? 
+How do we know if our guess is right? 
 
-Simple! We try it on other messages that were encrypted with the same key. If our guess is correct, the other messages should decode into normal letters (A-Z, a-z) at that same position.
+We try it on other messages that were encrypted with the same key. If our guess is correct, the other messages should decode into normal letters (A-Z, a-z) at that same position.
 
 Think of it like this: if you're trying to guess someone's birthday and you say "Is it in June?", you'd check if your guess makes sense with other clues you have. Same idea here!
 
