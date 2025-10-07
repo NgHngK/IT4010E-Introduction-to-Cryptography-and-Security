@@ -60,9 +60,9 @@ The program will print out:
 
 Some characters might show up as "?" - that just means the program couldn't figure out that specific spot. But it usually gets most of it right!
 
-## The Math Behind It (Super Simple)
+## The Math Behind It
 
-Don't worry, it's not complicated math! The encryption uses something called XOR (exclusive OR). Think of it like this:
+The encryption uses something called XOR (exclusive OR). Think of it like this:
 
 ```
 Message ⊕ Key = Encrypted Message
@@ -87,4 +87,4 @@ When used correctly (with a different key every time), this type of encryption i
 
 Just compile and run the C++ code. It already has 10 encrypted messages and 1 target message built in. You'll see the magic happen right before your eyes as it cracks the code and reveals the hidden text!
 
-Pretty cool, right? 🔓
+
