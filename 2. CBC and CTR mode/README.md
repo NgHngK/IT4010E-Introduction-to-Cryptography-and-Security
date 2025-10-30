@@ -1,10 +1,14 @@
-AES Encryption Decryption Code
+# AES Encryption Decryption Code
 
 This file explains a Python program that uses AES to encrypt and decrypt messages. It describes how the code works, what is needed to run it, and what the final decoded messages are.
 
 # Library Used
 
-This code uses pycryptodome. This library helps the code perform the encryption and decryption steps.
+This code uses pycryptodome. This library helps the code perform the encryption and decryption steps. 
+To download it, paste this command to the terminal
+<pre>
+  pip install pycryptodome
+</pre>
 
 # How the Decryption Works
 
