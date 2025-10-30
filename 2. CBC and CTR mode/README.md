@@ -1,6 +1,6 @@
 # AES Encryption Decryption Code
 
-This is a Python program that uses AES to encrypt and decrypt messages. The README describes how the code works, what is needed to run it, and what the final decoded messages are.
+This describes how the code works, what is needed to run it, and what the final decoded messages are. This Python program is about using AES to encrypt and decrypt messages.
 
 # Requirement
 - Python 3.8+
